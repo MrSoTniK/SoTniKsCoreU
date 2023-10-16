@@ -2,7 +2,7 @@
 <boot version="2.17.0.1" autosave="0">
 	<gui_path>core/gui/</gui_path>
 	<engine_log>log.txt</engine_log>
-	<system_script>data/General/Worlds/mainmenu.usc</system_script>
+	<system_script>core/unigine.usc</system_script>
 	<editor_script/>
 	<cache_path/>
 	<system_cache>unigine.cache</system_cache>
@@ -33,7 +33,7 @@
 		<gl_async_buffer_synchronization>1</gl_async_buffer_synchronization>
 		<gl_use_debug_info>0</gl_use_debug_info>
 		<log_file>1</log_file>
-		<log_stdout>1</log_stdout>
+		<log_stdout>0</log_stdout>
 		<main_window>1</main_window>
 		<main_window_auto_restart>1</main_window_auto_restart>
 		<main_window_borders>1</main_window_borders>

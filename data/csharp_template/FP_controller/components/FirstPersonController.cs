@@ -1,8 +1,4 @@
-﻿
-using System.Collections.Generic;
-using Unigine;
-
-#region Math Variables
+﻿#region Math Variables
 #if UNIGINE_DOUBLE
 using Scalar = System.Double;
 using Vec2 = Unigine.dvec2;
@@ -13,12 +9,17 @@ using Mat4 = Unigine.dmat4;
 using Scalar = System.Single;
 using Vec2 = Unigine.vec2;
 using Vec3 = Unigine.vec3;
+using Vec4 = Unigine.vec4;
 using Mat4 = Unigine.mat4;
+using WorldBoundBox = Unigine.BoundBox;
+using WorldBoundSphere = Unigine.BoundSphere;
+using WorldBoundFrustum = Unigine.BoundFrustum;
 #endif
 #endregion
 
+using System.Collections.Generic;
+using Unigine;
 
-namespace UnigineApp.data.csharp_template.FP_controller.components;
 
 [Component(PropertyGuid = "7abd3d1dd6399bd8498bed57e699aacada031ba1")]
 public class FirstPersonController : Component
@@ -93,7 +94,7 @@ public class FirstPersonController : Component
 
 	[ShowInEditor]
 	[Parameter(Group = "Body", Tooltip = "You can use current node to customize the body.\nIt should have a dummy body and a capsule shape assigned.\n" +
-	                                     "In case of incorrect settings of the specified custom body or shape, a default body and capsule shape shall be created instead.")]
+		"In case of incorrect settings of the specified custom body or shape, a default body and capsule shape shall be created instead.")]
 	private bool useObjectBody = false;
 
 	[ShowInEditor]
@@ -299,7 +300,7 @@ public class FirstPersonController : Component
 
 	[ShowInEditor]
 	[ParameterSlider(Min = 15, Max = 240, Group = "Advanced Settings", Tooltip = "Minimum update rate for the player (in number of frames per second).\n" +
-		"If this value exceeds the current framerate, the player will be updated several times per frame")]
+	"If this value exceeds the current framerate, the player will be updated several times per frame")]
 	private int playerFps = 60;
 
 	[ShowInEditor]
@@ -1010,8 +1011,8 @@ public class FirstPersonController : Component
 
 			// restore velocity in new basis
 			HorizontalVelocity = slopeAxisX * horizontalVelocityDecomposition.x +
-			                     slopeAxisY * horizontalVelocityDecomposition.y +
-			                     slopeNormal * horizontalVelocityDecomposition.z;
+								 slopeAxisY * horizontalVelocityDecomposition.y +
+								 slopeNormal * horizontalVelocityDecomposition.z;
 		}
 
 		// add horizontal velocity in slope basis
