@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.17.0.1" name="SceneContext" manual="1" parent_name="C# Components" editable="0">
+	<parameter name="_projectContextTemplate" type="file" filter=".node"/>
+	<parameter name="_installers" type="array" array_type="property" filter="689f7c88f25c7809f59ecb0004bbd36a630a982c" flags="internal"/>
+</property>

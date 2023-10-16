@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.17.0.1">
+	<node type="NodeDummy" id="190610113" name="MainMenuContext">
+		<properties>
+			<property parent="35831d3c6ec86994a80771965dabfba9d24e3f80" guid="52517d37935bd439d3bdc7e3c02945137c6df058">
+				<parameter name="_projectContextTemplate">guid://ba42c64c16bfe66c72a451f02f8fbedcaa039ba5</parameter>
+				<parameter name="_installers">
+					<value index="0">e3f9b50c56ee44858775fcb02a35bda2d40ce965</value>
+					<value index="1">a2945e209d0ddbbbd8aa7a041c99c86c600c3789</value>
+					<value index="2">171a7bc41e43f0b2622930e8c76d03d1726ba57d</value>
+					<value index="3">c7767ea8c53a7ed67503510cdef5e28d151aafb1</value>
+					<value index="4">287b6842e5616a616caad1c633db79bf7b589f53</value>
+					<value index="5">6babef9a267f6cb5d275e89e5ac9f21f49f55a8b</value>
+					<value index="6">5eac3a4c2c34a8c1da9005f0e735231e20da9fa5</value>
+					<value index="7">00791c082df685eb69582c6cb5c93d7a87176491</value>
+				</parameter>
+			</property>
+			<property parent="e2920f86ec72bf69a45db62d0c83c96994761c65" guid="e3f9b50c56ee44858775fcb02a35bda2d40ce965"/>
+			<property parent="ec4935a512db8b02354fe9c5eaab958a0f90c48b" guid="a2945e209d0ddbbbd8aa7a041c99c86c600c3789">
+				<parameter name="_sceneType">1</parameter>
+			</property>
+			<property parent="33f1056955e8a3a35ad39ca7c72f0796f9145d86" guid="171a7bc41e43f0b2622930e8c76d03d1726ba57d"/>
+			<property parent="745ec5df6130550de90b716e6518192157f16df9" guid="c7767ea8c53a7ed67503510cdef5e28d151aafb1"/>
+			<property parent="f76fca10732c50e1b0064b6011e0943c116dbfb3" guid="287b6842e5616a616caad1c633db79bf7b589f53"/>
+			<property parent="9e948effabe77cc6ca40966d859c4196f963dab9" guid="6babef9a267f6cb5d275e89e5ac9f21f49f55a8b"/>
+			<property parent="4f131df932f7f402de09e53344cd3b70f8056099" guid="5eac3a4c2c34a8c1da9005f0e735231e20da9fa5"/>
+			<property parent="881649d60d47ec1afe14e7db0e04b78a7428dc02" guid="00791c082df685eb69582c6cb5c93d7a87176491">
+				<parameter name="_systemsInstallerComponent">5eac3a4c2c34a8c1da9005f0e735231e20da9fa5</parameter>
+			</property>
+		</properties>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

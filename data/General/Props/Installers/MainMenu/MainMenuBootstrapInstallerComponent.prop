@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.17.0.1" name="MainMenuBootstrapInstallerComponent" manual="1" parent_name="InstallerComponent" editable="0">
+	<struct name="MainMenuSystemsInstallerComponent"/>
+	<parameter name="_systemsInstallerComponent" type="property" filter="4f131df932f7f402de09e53344cd3b70f8056099" flags="internal"/>
+	<parameter name="_maxElapsedTime" type="float">0.0199999996</parameter>
+</property>

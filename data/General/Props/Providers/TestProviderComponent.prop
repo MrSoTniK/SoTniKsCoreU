@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.17.0.1" name="TestProviderComponent" manual="1" parent_name="C# Components" editable="0">
+	<parameter name="_value1" type="int">0</parameter>
+	<parameter name="_value2" type="int">0</parameter>
+</property>

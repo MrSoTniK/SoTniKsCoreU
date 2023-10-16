@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.17.0.1">
+	<node type="NodeDummy" id="806655022" name="ProjectContext">
+		<properties>
+			<property parent="05a1f7271f1739a967415251b5fdba84c06312c0" guid="b0090de5ce4951046e31cb31d548db788f9bec7e">
+				<parameter name="_installers">
+					<value index="0">d97a8fec2970851f792c8d90f261e74cbfe229c5</value>
+					<value index="1">8346d39fa2c7f752d3b4e9cbd25642672bcc9060</value>
+					<value index="2">455756feb6468c098d6195428953121f10b8883f</value>
+					<value index="3">b2047be91e3fb8e385bfd5f5a382beb5ea3df892</value>
+					<value index="4">e8ddb060d5245adec646e04414eebe2f18e0bec9</value>
+					<value index="5">b2b2a943d0bc4b0a08bf2a2facd14458ad7db994</value>
+				</parameter>
+			</property>
+			<property parent="7ddc16e46cae1f5c5180533d41b0115f0fe261a1" guid="d97a8fec2970851f792c8d90f261e74cbfe229c5"/>
+			<property parent="d485d7eb1af37fd996fdce4d64e59092a989c2f7" guid="8346d39fa2c7f752d3b4e9cbd25642672bcc9060">
+				<parameter name="_isProject">1</parameter>
+			</property>
+			<property parent="ef8dd41278bfb44e8dd2ada59bd3038b03b08332" guid="455756feb6468c098d6195428953121f10b8883f"/>
+			<property parent="18ce9ca06194a1068f94b0799887d559c8ffde4b" guid="b2047be91e3fb8e385bfd5f5a382beb5ea3df892"/>
+			<property parent="d2513c5e92dfe2a2da82b0043bfd5e68a9e2e374" guid="e8ddb060d5245adec646e04414eebe2f18e0bec9"/>
+			<property parent="cd5e17eb74f2188c77e374f21af113c0f0ba84d0" guid="b2b2a943d0bc4b0a08bf2a2facd14458ad7db994">
+				<parameter name="_systemsInstallerComponent">e8ddb060d5245adec646e04414eebe2f18e0bec9</parameter>
+			</property>
+		</properties>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

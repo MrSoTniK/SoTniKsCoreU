@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.17.0.1" name="ProjectBootstratpInstallerComponent" manual="1" parent_name="InstallerComponent" editable="0">
+	<struct name="ProjectSystemsInstallerComponent"/>
+	<parameter name="_systemsInstallerComponent" type="property" filter="d2513c5e92dfe2a2da82b0043bfd5e68a9e2e374" flags="internal"/>
+	<parameter name="_maxElapsedTime" type="float">0.0199999996</parameter>
+</property>

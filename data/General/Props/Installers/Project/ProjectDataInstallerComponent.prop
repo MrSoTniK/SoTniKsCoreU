@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.17.0.1" name="ProjectDataInstallerComponent" manual="1" parent_name="InstallerComponent" editable="0">
+	<parameter name="_isProject" type="toggle">0</parameter>
+	<parameter name="_sceneType" type="switch" items="Project,MainMenu,Game">0</parameter>
+</property>
