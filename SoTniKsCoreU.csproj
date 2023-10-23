@@ -122,8 +122,16 @@
 		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ToolsInstallerAbstract.cs"/>
 		<Compile Include="data/General/Scripts/Gameplay/Enums/Scenes/SceneType.cs"/>
 		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Systems/MainMenuSystemsInstaller.cs"/>
+		<Compile Include="data/General/Scripts/Core/UI/ContainerAbstractUI.cs"/>
+		<Compile Include="data/General/Scripts/Gameplay/Info/Settings/SettingsInfo.cs"/>
+		<Compile Include="data/General/Scripts/Gameplay/Systems/MainMenu/UI/MainMenuPreInitSystem.cs"/>
+		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/MainMenu/MainMenuInfoUI.cs"/>
 	</ItemGroup>
 	<ItemGroup>
+		<Compile Include="data\General\Scripts\Core\UI\ContainerAbstractUI.cs"/>
+		<Compile Include="data\General\Scripts\Gameplay\Info\Scenes\MainMenu\MainMenuInfoUI.cs"/>
+		<Compile Include="data\General\Scripts\Gameplay\Info\Settings\SettingsInfo.cs"/>
+		<Compile Include="data\General\Scripts\Gameplay\Systems\MainMenu\UI\MainMenuPreInitSystem.cs"/>
 		<Compile Include="source\AppEditorLogic.cs"/>
 		<Compile Include="source\AppSystemLogic.cs"/>
 		<Compile Include="source\AppWorldLogic.cs"/>

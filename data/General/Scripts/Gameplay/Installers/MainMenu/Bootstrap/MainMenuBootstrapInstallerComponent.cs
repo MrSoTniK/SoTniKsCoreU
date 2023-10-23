@@ -1,10 +1,12 @@
-﻿using Core.Infrastructure.Installers;
+﻿using System;
+using Core.Infrastructure;
+using Core.Infrastructure.Installers;
 using Unigine;
 using UnigineApp.data.General.Scripts.Gameplay.Installers.MainMenu.Systems;
 
 namespace UnigineApp.data.General.Scripts.Gameplay.Installers.MainMenu.Bootstrap;
 
-public class MainMenuBootstrapInstallerComponent :  InstallerComponent
+public class MainMenuBootstrapInstallerComponent :  InstallerComponent, IDisposable
 {
     [ShowInEditor] private MainMenuSystemsInstallerComponent _systemsInstallerComponent;
     [ShowInEditor] private float _maxElapsedTime = 0.02f;
@@ -22,5 +24,10 @@ public class MainMenuBootstrapInstallerComponent :  InstallerComponent
     private void Update()
     {
         _mainMenuBootstrapInstaller?.Update();
+    }
+
+    public void Dispose()
+    {
+        _mainMenuBootstrapInstaller.Dispose();
     }
 }

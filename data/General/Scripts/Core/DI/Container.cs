@@ -22,7 +22,7 @@ namespace Core.DI
             _parentContainer = parentContainer;
         }
 
-        public TObject CreateInjectedObject<TObject>() where TObject : new()
+        public TObject CreateInjectedObject<TObject>()
         {
             var type = typeof(TObject);
             return (TObject)CreateInstance(type);

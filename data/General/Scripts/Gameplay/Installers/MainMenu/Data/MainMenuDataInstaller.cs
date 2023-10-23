@@ -13,6 +13,6 @@ public class MainMenuDataInstaller : DataInstallerAbstract<SceneType, MainMenuIn
 
     protected override void RegisterData(IContainer container)
     {
-        
+        container.Register<MainMenuInfoUI>(Lifetime.Single);
     }
 }

@@ -6,7 +6,7 @@ using Unigine;
 namespace Core.Infrastructure.Installers 
 {
     public abstract class BootstrapInstallerAbstract<TEcsStratup, 
-        TSceneType, TSceneInfo> : InstallerAbstract
+        TSceneType, TSceneInfo> : InstallerAbstract, IDisposable
         where TEcsStratup : EcsStartup<TSceneType, TSceneInfo>, new()
         where TSceneType : Enum
         where TSceneInfo : SceneInfoAbstract<TSceneType>, new()
@@ -48,6 +48,11 @@ namespace Core.Infrastructure.Installers
                 ElapsedTime = 0;
                 EcsStratup?.FixedTick();
             }
+        }
+
+        public void Dispose()
+        {
+            EcsStratup?.Dispose();
         }
     }
 }

@@ -15,4 +15,5 @@ public interface IContainer
     public RegisteredType[] ResolveRegisteredTypes(Type type);
     public object ResolveRegisteredType(Type type);
     public object Resolve(Type type);
+    public TObject CreateInjectedObject<TObject>();
 }
