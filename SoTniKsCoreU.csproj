@@ -19,126 +19,130 @@
 		<Platforms>x64</Platforms>
 		<PlatformTarget>x64</PlatformTarget>
 		<DebugType>portable</DebugType>
-		<DOTNET_HOST_PATH Condition="&apos;$(DOTNET_HOST_PATH)&apos; == &apos;&apos;">dotnet</DOTNET_HOST_PATH>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<DOTNET_HOST_PATH Condition="'$(DOTNET_HOST_PATH)' == ''">dotnet</DOTNET_HOST_PATH>
 	</PropertyGroup>
-	<PropertyGroup Condition="&apos;$(Configuration)&apos;==&apos;Debug&apos;">
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<AssemblyName>SoTniKsCoreU_x64d</AssemblyName>
 		<DebugSymbols>true</DebugSymbols>
 		<Optimize>false</Optimize>
 		<DefineConstants>TRACE;DEBUG;UNIGINE_DOUBLE;</DefineConstants>
 	</PropertyGroup>
-	<ItemGroup Condition="&apos;$(Configuration)&apos;==&apos;Debug&apos;">
+	<ItemGroup Condition="'$(Configuration)'=='Debug'">
 		<Reference Include="UnigineSharp_double_x64d">
 			<SpecificVersion>false</SpecificVersion>
 			<HintPath>bin\UnigineSharp_double_x64d.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-	<PropertyGroup Condition="&apos;$(Configuration)&apos;==&apos;Release&apos;">
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
 		<AssemblyName>SoTniKsCoreU_x64</AssemblyName>
 		<Optimize>true</Optimize>
 		<DefineConstants>TRACE;NDEBUG;UNIGINE_DOUBLE;</DefineConstants>
 	</PropertyGroup>
-	<ItemGroup Condition="&apos;$(Configuration)&apos;==&apos;Release&apos;">
+	<ItemGroup Condition="'$(Configuration)'=='Release'">
 		<Reference Include="UnigineSharp_double_x64">
 			<SpecificVersion>false</SpecificVersion>
 			<HintPath>bin\UnigineSharp_double_x64.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Factories/MainMenuFactoriesInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Systems/MainMenuSystemsInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ViewsInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/World/ProjectWorldInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/InjectAttribute.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ComponentsInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Data/MainMenuDataInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Startups/Project/ProjectStartup.cs"/>
-		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Contexts/ProjectContext.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/BootstrapInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/filters.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/IContainer.cs"/>
-		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/systems.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/IInjector.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/World/ProjectWorldInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Contexts/SceneContext.cs"/>
-		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/worlds.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/RxField.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/Project/ProjectInfo.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Views/MainMenuViewsInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Bootstrap/ProjectBootstratpInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/DataBases/ProjectDataBasesInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Data/MainMenuDataInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Providers/Test/TestStruct.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Bootstrap/MainMenuBootstrapInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/components.cs"/>
-		<Compile Include="data/General/Scripts/Core/EcsProvider/ConvertMode.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/DataBases/MainMenuDataBasesInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/Injector.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/IRequest.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/WorldInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Systems/ProjectSystemsInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Providers/Test/TestProviderComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Scenes/SceneInfoAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Core/Tools/WorldGetter.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/DataBasesInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/ViewComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/FactoriesInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/DataBases/MainMenuDataBasesInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Components/MainMenuComponentsInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/RegisteredType.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/IComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/InstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Systems/ProjectSystemsInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Views/ViewBase.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Data/ProjectDataInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/IReadonlyRxField.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Factories/MainMenuFactoriesInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Views/MainMenuViewsInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Tools/ProjectToolsInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/EcsProvider/IConvertToEntity.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/DataBases/ProjectDataBasesInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/ITag.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Components/MainMenuComponentsInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Scenes/Scene.cs"/>
-		<Compile Include="data/General/Scripts/Core/EcsProvider/IProvider.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/World/MainMenuWorldInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/World/MainMenuWorldInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Startups/MainMenu/MainMenuStartup.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Bootstrap/ProjectBootstrapInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Data/ProjectDataInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Tools/ProjectToolsInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/InstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Bootstrap/MainMenuBootstrapInstallerComponent.cs"/>
-		<Compile Include="data/General/Scripts/Core/EcsProvider/ConvertToEntity.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/DataInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/Lifetime.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/SystemsInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/MainMenu/MainMenuInfo.cs"/>
-		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/entities.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/WorldsInfo.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/EcsStartup.cs"/>
-		<Compile Include="data/General/Scripts/Core/DI/Container.cs"/>
-		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ToolsInstallerAbstract.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Enums/Scenes/SceneType.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Systems/MainMenuSystemsInstaller.cs"/>
-		<Compile Include="data/General/Scripts/Core/UI/ContainerAbstractUI.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Info/Settings/SettingsInfo.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Systems/MainMenu/UI/MainMenuPreInitSystem.cs"/>
-		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/MainMenu/MainMenuInfoUI.cs"/>
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Factories/MainMenuFactoriesInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Systems/MainMenuSystemsInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ViewsInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/World/ProjectWorldInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ComponentsInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/MainMenu/MainMenuInfoUI.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Data/MainMenuDataInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Startups/Project/ProjectStartup.cs" />
+		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Contexts/ProjectContext.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/InjectAttribute.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/BootstrapInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/World/ProjectWorldInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Contexts/SceneContext.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/RxField.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/DataBases/ProjectDataBasesInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Bootstrap/ProjectBootstratpInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/Project/ProjectInfo.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Views/MainMenuViewsInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Data/MainMenuDataInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Providers/Test/TestStruct.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/IContainer.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/IInjector.cs" />
+		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/filters.cs" />
+		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/systems.cs" />
+		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/worlds.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Bootstrap/MainMenuBootstrapInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/EcsProvider/ConvertMode.cs" />
+		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/components.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/DataBases/MainMenuDataBasesInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Providers/Test/TestProviderComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/IRequest.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Systems/ProjectSystemsInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/WorldInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/Injector.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Scenes/SceneInfoAbstract.cs" />
+		<Compile Include="data/General/Scripts/Core/UI/ContainerAbstractUI.cs" />
+		<Compile Include="data/General/Scripts/Core/Tools/WorldGetter.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/DataBasesInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/ViewComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/FactoriesInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/DataBases/MainMenuDataBasesInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Components/MainMenuComponentsInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/InstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/IComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Systems/ProjectSystemsInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/RegisteredType.cs" />
+		<Compile Include="data/General/Scripts/Core/Views/ViewBase.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Data/ProjectDataInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Systems/MainMenu/UI/MainMenuPreInitSystem.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/IReadonlyRxField.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Factories/MainMenuFactoriesInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Views/MainMenuViewsInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Tools/ProjectToolsInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/EcsProvider/IConvertToEntity.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/DataBases/ProjectDataBasesInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Components/ITag.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Components/MainMenuComponentsInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Scenes/Scene.cs" />
+		<Compile Include="data/General/Scripts/Core/EcsProvider/IProvider.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/World/MainMenuWorldInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/World/MainMenuWorldInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Startups/MainMenu/MainMenuStartup.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Bootstrap/ProjectBootstrapInstaller.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Data/ProjectDataInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/Project/Tools/ProjectToolsInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/InstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Info/Settings/SettingsInfo.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Bootstrap/MainMenuBootstrapInstallerComponent.cs" />
+		<Compile Include="data/General/Scripts/Core/EcsProvider/ConvertToEntity.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/DataInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/SystemsInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/Lifetime.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Info/Scenes/MainMenu/MainMenuInfo.cs" />
+		<Compile Include="data/General/Scripts/Core/ECS/LeoECS-Lite/ecslite-master/src/entities.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/WorldsInfo.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/EcsStartup.cs" />
+		<Compile Include="data/General/Scripts/Core/Infrastructure/Installers/ToolsInstallerAbstract.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Enums/Scenes/SceneType.cs" />
+		<Compile Include="data/General/Scripts/Gameplay/Installers/MainMenu/Systems/MainMenuSystemsInstaller.cs" />
+		<Compile Include="data/General/Scripts/Core/DI/Container.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data\General\Scripts\Core\UI\ContainerAbstractUI.cs"/>
-		<Compile Include="data\General\Scripts\Gameplay\Info\Scenes\MainMenu\MainMenuInfoUI.cs"/>
-		<Compile Include="data\General\Scripts\Gameplay\Info\Settings\SettingsInfo.cs"/>
-		<Compile Include="data\General\Scripts\Gameplay\Systems\MainMenu\UI\MainMenuPreInitSystem.cs"/>
-		<Compile Include="source\AppEditorLogic.cs"/>
-		<Compile Include="source\AppSystemLogic.cs"/>
-		<Compile Include="source\AppWorldLogic.cs"/>
-		<Compile Include="source\main.cs"/>
+		<Compile Include="data\General\Scripts\Gameplay\Systems\Project\Settings\ProjectSettingsPreInitSystem.cs" />
+		<Compile Include="source\AppEditorLogic.cs" />
+		<Compile Include="source\AppSystemLogic.cs" />
+		<Compile Include="source\AppWorldLogic.cs" />
+		<Compile Include="source\main.cs" />
+		<Compile Include="source\ImGuiImpl.cs" />
 	</ItemGroup>
+        <ItemGroup>
+            <Reference Include="ImGui.NET">
+                <HintPath>bin\ImGui.NET.dll</HintPath>
+            </Reference>
+        </ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="&apos;$(Configuration)&apos;==&apos;Debug&apos; And $(SkipPostBuild)==&apos;false&apos;"/>
-		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="&apos;$(Configuration)&apos;==&apos;Release&apos; And $(SkipPostBuild)==&apos;false&apos;"/>
+		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="'$(Configuration)'=='Debug' And $(SkipPostBuild)=='false'" />
+		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="'$(Configuration)'=='Release' And $(SkipPostBuild)=='false'" />
 	</Target>
 </Project>

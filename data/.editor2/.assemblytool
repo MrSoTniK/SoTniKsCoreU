@@ -9,7 +9,7 @@
     "main_release": "G:/UnigineProjects/Sluvenshir/SoTniKsCoreU/bin/SoTniKsCoreU_x64.exe",
     "name": "SoTniKsCoreU",
     "os": "Windows",
-    "precision": "Float",
+    "precision": "Double",
     "precompile": true,
     "resolutions": [
         "960;540;16;9",
@@ -38,8 +38,12 @@
     ],
     "rules": [
         {
-            "from": "",
-            "to": ""
+            "from": "G:\\UnigineProjects\\SoTniKsCoreU\\bin\\cimgui.dll",
+            "to": "bin"
+        },
+        {
+            "from": "G:\\UnigineProjects\\SoTniKsCoreU\\data\\imgui.basemat",
+            "to": "data"
         }
     ],
     "selected_res": 5,
